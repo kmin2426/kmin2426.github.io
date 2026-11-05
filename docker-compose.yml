@@ -1,0 +1,14 @@
+services:
+  jekyll:
+    image: amirpourmand/al-folio@sha256:5c4851775ffdc210902082d45d7f3b5b65a8464bd86dec5f42b4f9d6c47524e0
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /srv/jekyll
+    entrypoint: []
+    command: bundle exec jekyll serve --host 0.0.0.0 --port 8080 --livereload --force_polling --destination /tmp/_site
+    environment:
+      JEKYLL_ENV: development
+    ports:
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:35729:35729"
+    volumes:
+      - .:/srv/jekyll

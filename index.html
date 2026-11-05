@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dongmin Kim — undergraduate student and computer vision researcher at Hanyang University.">
+  <title>Dongmin Kim</title>
+  <style>
+    :root { color-scheme: light; --text: #222831; --muted: #677383; --line: #e6e9ef; --accent: #225b93; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: var(--text); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 84px 32px 100px; }
+    header { display: flex; align-items: center; gap: 44px; }
+    .portrait { flex: 0 0 210px; width: 210px; height: 210px; border-radius: 50%; object-fit: cover; object-position: 50% 45%; }
+    .eyebrow { font-size: 13px; font-weight: 650; color: var(--accent); letter-spacing: .07em; text-transform: uppercase; margin: 0 0 8px; }
+    h1 { font-size: 39px; line-height: 1.17; letter-spacing: -.035em; margin: 0 0 14px; font-weight: 750; }
+    .role { margin: 0 0 19px; color: var(--muted); }
+    .links { display: flex; gap: 19px; flex-wrap: wrap; }
+    a { color: var(--accent); text-decoration: none; font-weight: 570; }
+    a:hover { text-decoration: underline; }
+    main { margin-top: 62px; }
+    section { border-top: 1px solid var(--line); padding: 26px 0 10px; }
+    h2 { font-size: 19px; letter-spacing: -.015em; margin: 0 0 8px; }
+    p { margin: 0 0 14px; }
+    .details { padding-left: 20px; margin: 9px 0 20px; }
+    .details li { padding: 3px 0; }
+    footer { color: var(--muted); font-size: 13px; padding-top: 26px; }
+    @media (max-width: 600px) { .wrap { padding: 48px 22px 65px; } header { flex-direction: column; align-items: flex-start; gap: 26px; } .portrait { width: 176px; height: 176px; flex-basis: auto; } h1 { font-size: 34px; } main { margin-top: 46px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Dongmin Kim" width="210" height="210">
+      <div>
+        <h1>Dongmin Kim</h1>
+        <p class="role">Undergraduate Student<br>Department of Automotive Engineering, Hanyang University</p>
+        <nav class="links" aria-label="Links">
+          <a href="https://github.com/kmin2426">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>I am an undergraduate student at Hanyang University, majoring in Automotive Engineering with a minor in Data Science. My research interests include computer vision, vision-language models, and autonomous driving.</p>
+      </section>
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <p><strong>Hanyang University, Seoul, Republic of Korea</strong></p>
+        <ul class="details">
+          <li>B.S. in Automotive Engineering (Minor in Data Science)</li>
+        </ul>
+        <p><strong>RWTH Aachen University, Aachen, Germany</strong></p>
+        <ul class="details">
+          <li>Exchange Student, Mechanical Engineering</li>
+          <li>Mar 2026 - Aug 2026</li>
+        </ul>
+      </section>
+      <section aria-labelledby="research">
+        <h2 id="research">Research</h2>
+        <p>Currently exploring how visual detail in target objects and surrounding context affects vision-language model responses.</p>
+      </section>
+    </main>
+    <footer>© Dongmin Kim</footer>
+  </div>
+</body>
+</html>
